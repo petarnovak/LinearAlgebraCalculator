@@ -680,9 +680,10 @@
             // helpTextLabel
             // 
             this.helpTextLabel.AutoSize = true;
+            this.helpTextLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.helpTextLabel.Location = new System.Drawing.Point(60, 7);
             this.helpTextLabel.Name = "helpTextLabel";
-            this.helpTextLabel.Size = new System.Drawing.Size(38, 20);
+            this.helpTextLabel.Size = new System.Drawing.Size(50, 28);
             this.helpTextLabel.TabIndex = 5;
             this.helpTextLabel.Text = "help";
             // 

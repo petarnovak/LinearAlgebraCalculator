@@ -16,9 +16,18 @@ namespace WinFormsUI
     {
         private int maximumMatrixSize = 10;
 
-        private string helpText = "Welcome to Linear Algebra Calculator!\n\n" +
-            "Empty text box represents number 0.";
-        
+        private string helpText = getHelpText();
+
+        private static string getHelpText()
+        {
+            return "Welcome to Linear Algebra Calculator!\n\n" +
+            "This application can be used to:\n\t - solve system of linear equations (multiple variables and multiple equations)" +
+            "\n\t - calculate matrix properties (such as rank, determinant, echelon form, inverse matrix ect.)\n\t" +
+            " - perform matrix operations(addition , substraction, multiplication).\n\n" +
+            "To create a template to input your equation / matrix you have to input the parameters\n in the header " +
+            "(nuber of equations and variables/ matrix dimensions) and then click the create button.\n"+
+            "\nEmpty text box represents the number 0.";
+        }
 
         private InputMatrixPanel inputMatrixPanel;
         private Matrix matrix;
